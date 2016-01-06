@@ -16,4 +16,4 @@ VOLUME /notebook
 WORKDIR /notebook
 RUN chown -R 777 /notebook 
 EXPOSE 8888
-CMD jupyter notebook --data-dir $USER --no-browser --ip=0.0.0.0
+CMD jupyter notebook --no-browser --ip=0.0.0.0
