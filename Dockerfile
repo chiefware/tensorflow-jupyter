@@ -14,7 +14,7 @@ USER root
 
 VOLUME /notebook
 WORKDIR /notebook
-RUN chmod -R 777 /notebook/ 
 EXPOSE 8888
 #CMD jupyter notebook --no-browser --ip=0.0.0.0
-CMD [ "sh", "-c", "jupyter", "notebook", "--data-dir", "$HOME","--no-browser","--ip=0.0.0.0" ]
+CMD chmod -R 777 /notebook/ && jupyter notebook --no-browser --ip=0.0.0.0
+
