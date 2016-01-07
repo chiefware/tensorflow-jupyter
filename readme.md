@@ -1,4 +1,4 @@
-# added notebook-dir to run under my your user
+# added notebook-dir to run undermy own user
 
 ##dockerfile-tensorflow-jupyter
 Dockerized Jupyter with tensorflow
